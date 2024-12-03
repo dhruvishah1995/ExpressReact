@@ -1,0 +1,58 @@
+version: '1'
+
+services: 
+
+  back-end:
+    build: 
+      context: Backend
+    container_name: back-end
+    working_dir: /usr/src/app/
+    # networks: 
+    #   - node-network
+    volumes: 
+      - ./Backend:/usr/src/app/Backend
+      - /usr/src/app/node_modules
+    tty: true
+    ports: 
+      - "8080:8080"
+      - "3004:3004"
+    command: npm run devservera
+    # depends_on:
+    #    - db
+
+  front-end:
+    build: 
+      context: Frontend
+    container_name: front-end
+    working_dir: /usr/src/app/
+    # networks: 
+    #   - node-network
+    volumes: 
+      - ./Frontend:/usr/src/app/Frontend
+      - /usr/src/app/Frontend/node_modules
+    tty: true
+    ports: 
+      - "3000:3000"
+    command: npm start
+
+  db:
+    image: postgres
+    container_name: local_pgdb
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: astad
+   
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin4_container
+    restart: always
+    ports:
+      - "8888:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: pgadmin@astad.me
+      PGADMIN_DEFAULT_PASSWORD: astad
+   
+  

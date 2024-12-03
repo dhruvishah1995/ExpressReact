@@ -1,0 +1,17 @@
+.mandatory {
+    color: red;
+    margin-left: 5px;
+    font-size: smaller;
+}
+
+.boxContainer {
+
+    & .textPrimary {
+        color: 'text.primary';
+    }
+
+    & .dataGridHeader {
+        font-size: '13px';
+    }
+
+}

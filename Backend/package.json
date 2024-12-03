@@ -1,0 +1,29 @@
+{
+  "name": "gatbackend",
+  "version": "1.0.0",
+  "description": "API for backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devservera": "json-server --watch AllTiles.json --port 3004 & nodemon server.js",
+    "devserver": "concurrently \"json-server --watch AllTiles.json --port 3004\" \"nodemon server.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.5.0",
+    "body-parser": "^1.20.2",
+    "concurrently": "^8.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "esm": "^3.2.25",
+    "express": "^4.18.2",
+    "json-server": "^0.17.3",
+    "nodemon": "^3.0.1",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "react-toastify": "^9.1.3",
+    "sequelize": "^6.33.0"
+  }
+}

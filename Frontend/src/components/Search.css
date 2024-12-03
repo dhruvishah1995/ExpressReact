@@ -1,0 +1,44 @@
+  label {
+    margin-top: 20px;
+    width: 200px;
+    color: rgb(47, 65, 79);
+  }
+
+  .btnContainer {
+    margin-top: 5px;
+  }
+
+  .btnContainer .MuiButtonBase-root {
+    margin: 10px;
+    text-transform: capitalize;
+  }
+
+
+  .MuiDataGrid-columnHeaders {
+    background-color: rgb(163, 195, 229);
+  }
+
+  .MuiDataGrid-main {
+    background-color: azure;
+  }
+
+  .asterisk {
+    color: red;
+    margin-left: 3px;
+    font-size: smaller;
+  }
+
+  .frwdButton {
+    margin-top: 3px;
+    margin-left: 5px;
+  }
+
+  .frwdBtnContainer {
+    display: flex;
+  }
+
+  .errorMessage {
+    color: red;
+    margin-left: 15px;
+    font-size: smaller;
+  }

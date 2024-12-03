@@ -1,0 +1,105 @@
+.searchContainer {
+    height: 20%;
+}
+
+.tileId {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 9px 5px 0px 10px;
+}
+
+button {
+    margin-left: 30px;
+}
+
+.characteristic {
+    margin: 7px 30px 0px 15px;
+    width: 200px;
+}
+
+.characteristicBox {
+    display: flex;
+}
+
+.txtBoxCharacteristic input[type="text"] {
+    width: 150px;
+    padding: 0px;
+}
+
+.emptyOption {
+    height: 35px;
+}
+
+.brand {
+    width: 100px;
+}
+
+.tileIdSelect {
+    width: 250px;
+}
+
+select {
+    background-color: #fff;
+    border: 2px solid #caced1;
+    border-radius: 0.25rem;
+    padding: 2px;
+    color: #000;
+    cursor: pointer;
+}
+
+label {
+    width: 200px;
+    display: inline-flex;
+    margin-left: 20px;
+}
+
+.instruction {
+    margin-left: 20px;
+}
+
+.btnContainer {
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+
+.filterContainer {
+    margin-left: 10px;
+}
+
+.enrichmentContainer {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0px 0px 25px 20px;
+    margin: 25px 20px 25px 20px;
+    background-color: azure;
+}
+
+.asterisk {
+    color: red;
+    margin-left: 3px;
+    font-size: smaller;
+}
+
+.floatRight {
+    float: right;
+}
+
+.characteristicContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.backButton {
+    margin-top: 3px;
+}
+
+.backBtnContainer {
+    display: flex;
+}
